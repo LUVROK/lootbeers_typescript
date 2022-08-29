@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/lootbeers_typescript/static/css/main.97b30929.css",
+    "main.js": "/lootbeers_typescript/static/js/main.f41fa76c.js",
+    "static/js/787.43565f51.chunk.js": "/lootbeers_typescript/static/js/787.43565f51.chunk.js",
+    "static/media/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg": "/lootbeers_typescript/static/media/sebastian-unrau-sp-p7uuT0tw-unsplash.c3e60ae2d94feb0c0530.jpg",
+    "static/media/maxresdefault.jpg": "/lootbeers_typescript/static/media/maxresdefault.282a86216508f33a06e9.jpg",
+    "static/media/RobotoSlab_Bold.ttf": "/lootbeers_typescript/static/media/RobotoSlab_Bold.b4a6cff80bc429d3416d.ttf",
+    "static/media/RobotoSlab_Light.ttf": "/lootbeers_typescript/static/media/RobotoSlab_Light.6d68e46320e3d0f97a14.ttf",
+    "static/media/RobotoSlab_Regular.ttf": "/lootbeers_typescript/static/media/RobotoSlab_Regular.7ce86de3a11228c75d5e.ttf",
+    "static/media/RobotoSlab_Thin.ttf": "/lootbeers_typescript/static/media/RobotoSlab_Thin.ac12d323dca67204ba2e.ttf",
+    "static/media/plakat-jojo-no-kimyou-na-bouken.jpg": "/lootbeers_typescript/static/media/plakat-jojo-no-kimyou-na-bouken.db2296a8b524defa49eb.jpg",
+    "static/media/jojos-bizarre-adventure-6.jpg": "/lootbeers_typescript/static/media/jojos-bizarre-adventure-6.136a427bd3985046d294.jpg",
+    "index.html": "/lootbeers_typescript/index.html",
+    "main.97b30929.css.map": "/lootbeers_typescript/static/css/main.97b30929.css.map",
+    "main.f41fa76c.js.map": "/lootbeers_typescript/static/js/main.f41fa76c.js.map",
+    "787.43565f51.chunk.js.map": "/lootbeers_typescript/static/js/787.43565f51.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97b30929.css",
+    "static/js/main.f41fa76c.js"
+  ]
+}
