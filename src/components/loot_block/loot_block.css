@@ -1,0 +1,37 @@
+.Loot_block {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'RobotoSlab_Regular';
+    font-weight: normal;
+    color: #FFFFFF;
+}
+.Loot_color {
+    position: relative;
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #9eada8c9;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: rgba(0, 58, 97, 0.25) 0px 54px 55px, rgba(0, 58, 97, 0.12) 0px -12px 30px, rgba(0, 58, 97, 0.12) 0px 4px 6px, rgba(0, 58, 97, 0.17) 0px 12px 13px, rgba(0, 58, 97, 0.09) 0px -3px 5px;
+}
+.background_image {
+    position: relative;
+    width: 80%;
+    margin: 28px;
+    border-radius: 8px;
+}
+.price {
+    margin-bottom: 22px;
+}
