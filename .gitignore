@@ -10,8 +10,8 @@
 
 # production
 /build
-/trashcanFrontend
-/trashcan_front
+trashcanFrontend*
+trashcan_front*
 
 # misc
 .DS_Store
