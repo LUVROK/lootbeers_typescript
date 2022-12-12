@@ -1,0 +1,80 @@
+.listPageBtn {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0;
+}
+.listPageBtn_line {
+    position: absolute;
+    height: 2px;
+    top: calc(50% - 1px);
+    width: 40%;
+    left: 0; right: 0;
+    margin: auto;
+    background-color: #000000da;
+    background: linear-gradient(to right, rgb(255, 12, 12), rgb(255, 171, 14), rgb(255, 255, 15), rgb(0, 185, 0), rgb(41, 255, 255), rgb(38, 38, 250), rgb(255, 41, 255), rgb(255, 12, 12));
+    background-repeat: repeat;
+    background-size: 800% 800%;
+    // -webkit-background-clip: content-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 480s linear infinite;
+    animation: rainbow 480s linear infinite; 
+}
+.listPageBtn .listPageBtn_svgblock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    left: 5%;
+}
+.listPageBtn_svgblock_svg {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    cursor: pointer;
+}
+.listPageBtn .listPageBtn_svgblock:nth-child(1) {
+    justify-content: flex-end;
+    left: initial;
+    right: 5%;
+}
+.freelootbox {
+    // filter: blur(10px);
+    transition: all 1s ease-out;
+}
+.LootEventBlurElement {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.solanapng {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.f05solbackground {
+    background: #ffd90031;
+    // backdrop-filter: blur(10px);
+}
+.f025solbackground {
+    background: #E5E4E231;
+    // backdrop-filter: blur(10px);
+}
+.f01solbackground {
+    background: #2cfa1f31;
+    // backdrop-filter: blur(10px);
+}
+.f005solbackground {
+    background: #c0c0c031;
+    // backdrop-filter: blur(10px);
+}
+.f002solbackground {
+    background: #CD7F3231;
+    // backdrop-filter: blur(10px);
+}

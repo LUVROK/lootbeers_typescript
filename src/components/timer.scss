@@ -1,0 +1,61 @@
+.timerMini {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 30%;
+    padding: 0px 20px;
+    /* background: #00000073; */
+    /* height: auto; */
+    font-family: 'RobotoSlab_Light';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 38px;
+    margin-top: 0%;
+    display: flex;
+    color: rgb(255, 192, 0);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin-top: 20px;
+    /* visibility: hidden; */
+    /* display: none; */
+  }
+
+
+  @media screen and (max-width: 1310px) {
+    .timerMini {
+      font-size: 34px;
+    }
+  }
+
+  
+  @media screen and (max-width: 1034px) {
+    .timerMini {
+      font-size: 30px;
+    }
+  }
+
+  
+  @media screen and (max-width: 910px) {
+    .timerMini {
+      font-size: 26px;
+    }
+  }
+
+    
+  @media screen and (max-width: 710px) {
+    .timerMini {
+      font-size: 22px;
+    }
+  }
+
+    
+  @media screen and (max-width: 590px) {
+    .timerMini {
+      font-size: 18px;
+    }
+  }

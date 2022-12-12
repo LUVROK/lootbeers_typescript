@@ -1,0 +1,40 @@
+.footer {
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer .socialLinks {
+    left:0;
+    right: 0;
+    margin: 15px auto;
+    justify-content: center;
+}
+
+.footer .socialLinks .header_a img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    /* padding-right: 20px; */
+}
+
+.footer .socialLinks .header_a {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    /* margin-left: auto !important; */
+}
+
+.footer .socialLinks .header_a:nth-child(1) {
+    margin-right: 30px !important;
+}
+.footer .socialLinks .header_a:nth-child(2) {
+    margin-right: 30px !important;
+}

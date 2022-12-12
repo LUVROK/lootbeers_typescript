@@ -1,0 +1,511 @@
+.AnimationLootbeers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+
+    /* animation: AnimationLootbeersKeyframes 300s; */
+    /* background: #0000007c; */
+}
+
+.AnimationLootbeers_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 102;
+}
+.AnimationLootbeers_background_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    /* transition: 2s; */
+}
+.ff-loading-icon {
+  /* display: none !important; */
+}
+.AnimationLootbeers_background_block .lootboxAnimationImage {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  /* opacity: 0.9; */
+  /* transition: all 1s linear; */
+  z-index: 100;
+  opacity: 0;
+  z-index: 103;
+  /* transform: translate(-100%, -100%); */
+}
+.AnimationLootbeers_background_block .AnimationLootbeers_background_block_text {
+    position: relative;
+    font-size: 46px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'GraphikLCG-Regular';
+    font-weight: normal;
+    color:rgba(221, 221, 221, 0.89);
+    transition: all 2s;
+    opacity: 0;
+    z-index: 151;
+    transition: all 1s;
+    /* animation: AnimationLootbeersKeyframes_text 300s; */
+}
+.AnimationLootbeers_background_block_text_mini {
+  font-size: 28px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0; right: 0;
+}
+.header_a_block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.buttons_AnimationLootbeers {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tweetBtn {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px !important;
+  margin-top: 10px;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  height: auto;
+  padding: 5px 0px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 59px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border: 1px solid #d48816;
+  width: 200px;
+}
+.contentLineLBX {
+  position: absolute;
+  width: 400%;
+  height: 3px;
+  top: calc(50% - 3px);
+  margin-top: auto;
+  left: -150%;
+  margin-bottom: auto;
+  z-index: -1;
+}
+.tweetBtn:nth-child(2) {
+  margin-top: 10px;
+}
+.supportTextSvgBtn {
+  width: 100px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.AnimationLootbeers_background_block_buttons {
+  position: relative;
+  font-size: 24px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+
+}
+.AnimationLootbeers_background_block_buttons div {
+  padding: 8px 28px;
+  border-radius: 49px;
+  background: #000000;
+  transition: 0.5s;
+  z-index: 2;
+  display: flex;
+}
+.AnimationLootbeers_background_block_btn {
+  top: 92px;
+  font-family: 'GraphikLCG-Regular';
+  font-weight: normal;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 1s;
+}
+.linzeBlock {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: grid;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    z-index: -10;
+}
+.lens-center {
+    position: relative;
+    width: 40vmin;
+    height: 40vmin;
+    border-radius: 100%;
+    left: calc(35% - (40vmin / 2));
+    top: calc(35% - (40vmin / 2));
+    background: radial-gradient(closest-side circle at center,
+        hsl(4 5% 100% / 100%) 0%, 
+        hsl(4 5% 100% / 100%) 15%, 
+        hsl(4 10% 70% / 70%) 30%,
+        hsl(4 0% 50% / 30%) 55%,
+        hsl(4 0% 10% / 5%) 75%,
+        transparent 99%
+    );
+    filter: blur(4px);
+}
+.lens-center::before{
+    content: '';
+    display: block;
+    width: 80vmin;
+    height: 80vmin;
+    left: calc((80vmin - 40vmin) / 2 * -1);
+    top: calc((80vmin - 40vmin) /2 * -1);
+    position: absolute;
+    border-radius: 100%;
+    background: radial-gradient(closest-side circle at center,
+      hsl(4 15% 70% / 15%) 0%,
+      transparent 100%);
+}
+
+.lens-center::after {
+    content: '';
+    display: block;
+    width: 4vmin;
+    height: 4vmin;
+    left: 65%;
+    bottom: 25%;
+    position: absolute;
+    border-radius: 100%;
+    background: radial-gradient(closest-side circle at center,
+        hsl(4 30% 70% / 60%) 0%,
+        transparent 75%);
+}
+
+.circle-1 {
+    width: calc(40vmin * 0.7);
+    height: calc(40vmin * 0.7);
+    left: 65%;
+    top: 65%;
+    border-radius: 100%;
+    position: absolute;
+    background: radial-gradient(closest-side circle at center,
+        transparent 50%,
+        hsl(4 10% 70% / 40%) 90%,
+        transparent 100%);
+    filter: blur(5px);
+}
+
+.circle-2 {
+    width: calc(40vmin * 0.4);
+    height: calc(40vmin * 0.4);
+    left: 62%;
+    top: 62%;
+    border-radius: 100%;
+    position: absolute;
+    background:  hsl(4 10% 60% / 40%);
+    filter: blur(2px);
+}
+
+
+
+.inner {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:transparent;
+    width:200px;
+    height:200px;
+    border-radius:999px;
+    /* box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89; */
+    /* -webkit-animation: pulse 2s linear 1s infinite; */
+}
+.inner p {
+    display:block;
+    text-align: center;
+    line-height: 100px;
+    font-weight:normal;
+    font-size:24px;
+    color: #ea4c89;
+    text-shadow: 0 0 4px #ea4c89;
+}
+.ticketImage {
+  position: relative;
+  left: 0; right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  opacity: 0;
+  z-index: 9;
+  transition: all 1s;
+}
+
+.BackgroundClick {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+/* @-webkit-keyframes pulse {
+    0% { box-shadow:0 0 8px #ea4c89, inset 0 0 8px #ea4c89; }
+    50% { box-shadow:0 0 16px #ea4c89, inset 0 0 14px #ea4c89; }
+    100% { box-shadow:0 0 8px #ea4c89, inset 0 0 8px #ea4c89; }
+} */
+
+@keyframes AnimationLootbeersKeyframes {
+    0%{
+        background: #00000000;
+        display: none !important;
+    }
+    2% {
+        background: #000000d2;
+        display: flex !important;
+    }
+    98%{
+      background: #000000b6;
+    }
+    100%{
+        display: none !important;
+    }
+    /* 100% {
+        background: #00000000;
+    } */
+}
+
+@keyframes AnimationLootbeersKeyframes_text {
+    0%{
+        opacity: 0;
+    }
+    2% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+    /* 100% {
+        opacity: 0;
+    } */
+}
+@keyframes lootboxanimationkeyframes {
+  0%{
+    animation-play-state: paused;
+  }
+  50% {
+    animation-play-state: running;
+  }
+  100%{
+    animation-play-state: paused;
+  }
+}
+
+@keyframes AnimationLootbeersKeyframes_text2 {
+  0%{
+      opacity: 0;
+      transform: translate(0%, -100%) scale(0.3);
+      animation-timing-function:ease-in-out
+  }
+  2% {
+      opacity: 1;
+      animation-timing-function:ease-in-out
+  }
+  /* 45% {
+      transform: translate(200%, -10%) scale(0.65);
+      animation-timing-function:ease-in-out
+  } */
+  20% {
+    
+      transform: translate(0%, 0%) scale(1);
+      animation-timing-function:ease-in-out
+  }
+  100%{
+      opacity: 1;
+      animation-timing-function:ease-in-out
+  }
+  /* 100% {
+      opacity: 0;
+      animation-timing-function:ease-in-out
+  } */
+}
+
+
+
+.close {
+  position: absolute;
+  right: 52px;
+  top: 132px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  cursor: pointer;
+  z-index: 9999;
+  transition: opacity 0.75s;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 4px;
+  background-color: rgb(255, 255, 255);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 734px) {
+  .tweetBtn {
+    width: 125px;
+    font-size: 14px;
+  }
+  .AnimationLootbeers_background_block_text_mini img {
+    height: 70px !important;
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  .close {
+    top: 102px;
+    right: 24px;
+  }
+  .ticketImage {
+    width: 200px;
+  }
+  .AnimationLootbeers_background_block .AnimationLootbeers_background_block_text {
+    font-size: 20px;
+  }
+  .AnimationLootbeers_background_block_text_mini {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(.5,.03,.5,1) infinite;
+    transform-origin: 9px 9px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -2.4s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 15px;
+    left: 15px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -2.8s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 15.5px;
+    left: 14.5px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -3.2s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 16px;
+    left: 14px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -4.2s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 16.5px;
+    left: 13.5px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

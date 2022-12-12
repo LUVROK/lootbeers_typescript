@@ -1,0 +1,178 @@
+            const el5 = document.getElementById("buttonSpin2");
+            if (el5 !== null) {
+                el5.style.pointerEvents = 'none';
+            }
+
+                        const redult = await logMemo(`Lootbeers wants you to sign this transaction with your Solana account: ${publicKey?.toBase58()}
+
+            Click "Sign" or "Approve" only means you have proved you are owner of this wallet.
+
+            This exact Loot Box is functioning off-chain, which means this request will not trigger any transaction or cost you anything.
+            Click approve if you are real OG mfer and good luck to you! 
+
+            If you read through this, fuck... Why are you still here, open the damn box
+                        `);
+
+
+            if (typeof (redult) === 'string') {
+                if (price.toString() === '0') {
+                    try {
+                        const res = await axios.post(`${apiUrl}/api/v1/ticket/redeem`, {
+                            ticketAddress: 'ogtoah5LB7pry5YPK9LVZyN3ZzMVZPxFmLwj3BYyPg1',
+                            wallet: publicKey?.toBase58()
+                        })
+
+                        setTextOpen(`FREE`);
+                        if (lds_roller !== null) { (lds_roller as HTMLElement).style.display = 'none' }
+
+                        setAlertState({
+                            open: true,
+                            message: 'Successful transaction',
+                            severity: 'success'
+                        });
+
+                        const Array1: Array<number> = [1, 3, 5, 7, 9, 11, 13, 15]
+                        const Array2: Array<number> = [2, 4, 6, 8, 10, 12, 14, 16, 17]
+                        const Array3: Array<number> = [0, 1, 2]
+                        let rendomNum: number;
+
+                        // let rendomNum2 = await getRandomArrayElement(Array3);
+
+                        // setResponseStatNumber(rendomNum2);
+                        // setImageStateCong(rendomNum2);
+
+                        // if (Number(rendomNum2) === 0) {
+                        //     rendomNum = 0;
+                        //     spinWheel3(rendomNum, rendomNum2);
+                        //     settextState_About('Open the ticket in the Discord to claim your prize! Valid for 24 hours');
+                        //     setTextState(`${OG_win_variants2[rendomNum].text}`);
+                        //     setTimeout(() => {
+                        //         if (el5 !== null) { el5.style.pointerEvents = 'all' };
+                        //     }, 2000);
+                        // }
+                        // else if (Number(rendomNum2) === 1) {
+                        //     rendomNum = await getRandomArrayElement(Array1);
+                        //     spinWheel3(rendomNum, rendomNum2);
+                        //     settextState_About('Open the ticket in the Discord to claim your prize! Valid for 24 hours');
+                        //     setTextState(`${OG_win_variants2[rendomNum].text}`);
+                        //     setTimeout(() => {
+                        //         if (el5 !== null) { el5.style.pointerEvents = 'all' };
+                        //     }, 2000);
+                        // }
+                        // else if (Number(rendomNum2) === 2) {
+                        //     rendomNum = await getRandomArrayElement(Array2);
+                        //     spinWheel3(rendomNum, rendomNum2);
+                        //     settextState_About('');
+                        //     setTextState(`${OG_win_variants2[rendomNum].text}`);
+                        //     setTimeout(() => {
+                        //         if (el5 !== null) { el5.style.pointerEvents = 'all' };
+                        //     }, 2000);
+                        // }
+
+                        if (res.data.id && res.data.id !== null && res.data.id !== undefined) {
+
+                            setResponseStatNumber(res.data.id);
+                            setImageStateCong(res.data.id);
+
+                            if (Number(res.data.id) === 0) {
+                                rendomNum = 0;
+                                spinWheel3(rendomNum, res.data.id);
+                                settextState_About('Open the ticket in the Discord to claim your prize! Valid for 24 hours');
+                                setTextState(`${OG_win_variants2[rendomNum].text}`);
+                                setTimeout(() => {
+                                    if (el5 !== null) { el5.style.pointerEvents = 'all' };
+                                }, 2000);
+                            }
+                            else if (Number(res.data.id) === 1) {
+                                rendomNum = await getRandomArrayElement(Array1);
+                                spinWheel3(rendomNum, res.data.id);
+                                settextState_About('Open the ticket in the Discord to claim your prize! Valid for 24 hours');
+                                setTextState(`${OG_win_variants2[rendomNum].text}`);
+                                setTimeout(() => {
+                                    if (el5 !== null) { el5.style.pointerEvents = 'all' };
+                                }, 2000);
+                            }
+                            else if (Number(res.data.id) === 2) {
+                                rendomNum = await getRandomArrayElement(Array2);
+                                spinWheel3(rendomNum, res.data.id);
+                                settextState_About('');
+                                setTextState(`${OG_win_variants2[rendomNum].text}`);
+                                setTimeout(() => {
+                                    if (el5 !== null) { el5.style.pointerEvents = 'all' };
+                                }, 2000);
+                            }
+                        }
+                        else {
+                            setAlertState({
+                                open: true,
+                                message: "Something went wrong",
+                                severity: 'error'
+                            });
+                        }
+                    }
+                    catch (e: any) {
+                        console.log(e);
+                        // console.log(OG_win_variants[1].text)
+
+                        if (e.response as any !== undefined) {
+
+                            switch (e.response.data.title) {
+                                case 'LOOTBOX_TIMEOUT':
+                                    setAlertState({
+                                        open: true,
+                                        message: "Free OG Loot Box is available every 6 hours",
+                                        severity: 'info'
+                                    });
+                                    break;
+
+                                case 'INSUFFICIENT_FUNDS':
+                                    setAlertState({
+                                        open: true,
+                                        message: "You need to have at least 0.01 solana on your account",
+                                        severity: 'info'
+                                    });
+                                    break;
+
+                                case 'LOOTBOX_NOT_FOUND':
+                                    setAlertState({
+                                        open: true,
+                                        message: "LOOTBOX_NOT_FOUND",
+                                        severity: 'info'
+                                    });
+                                    break;
+
+                                default:
+                                    setAlertState({
+                                        open: true,
+                                        message: "The problem is on the server, contact us",
+                                        severity: 'error'
+                                    });
+                                    break;
+                            }
+
+                            if (lds_roller !== null) { (lds_roller as HTMLElement).style.display = 'none' }
+                            setTextOpen(`FREE`);
+
+                            setTimeout(() => {
+                                if (el5 !== null) { el5.style.pointerEvents = 'all' };
+                            }, 2000)
+
+                        }
+                    }
+                    return;
+                }
+            }
+            else {
+                return;
+            }
+
+
+
+
+                <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SNYFWCQ9EK');
+    </script>

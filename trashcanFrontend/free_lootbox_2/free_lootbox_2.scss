@@ -1,0 +1,220 @@
+.listPageBtn {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0;
+  }
+  .listPageBtn_line {
+    position: absolute;
+    height: 2px;
+    top: calc(50% - 1px);
+    width: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000000da;
+    background: linear-gradient(to right, rgb(255, 12, 12), rgb(255, 171, 14), rgb(255, 255, 15), rgb(0, 185, 0), rgb(41, 255, 255), rgb(38, 38, 250), rgb(255, 41, 255), rgb(255, 12, 12));
+    background-repeat: repeat;
+    background-size: 800% 800%;
+    // -webkit-background-clip: content-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 480s linear infinite;
+    animation: rainbow 480s linear infinite;
+  }
+  .listPageBtn .listPageBtn_svgblock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    left: 5%;
+  }
+  .listPageBtn_svgblock_svg {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    cursor: pointer;
+  }
+  .listPageBtn .listPageBtn_svgblock:nth-child(1) {
+    justify-content: flex-end;
+    left: initial;
+    right: 5%;
+  }
+  .freelootbox {
+    // filter: blur(10px);
+    transition: all 1s ease-out;
+  }
+  .LootEventBlurElement {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .solanapng {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  
+  .f05solbackground {
+    background: #ffd90031;
+    // backdrop-filter: blur(10px);
+  }
+  .f025solbackground {
+    background: #e5e4e231;
+    // backdrop-filter: blur(10px);
+  }
+  .f01solbackground {
+    background: #2cfa1f31;
+    // backdrop-filter: blur(10px);
+  }
+  .f005solbackground {
+    background: #c0c0c031;
+    // backdrop-filter: blur(10px);
+  }
+  .f002solbackground {
+    background: #cd7f3231;
+    // backdrop-filter: blur(10px);
+  }
+  
+  // .imgnft002 {
+  //     width: 80px !important;
+  //     height: auto !important;
+  // }
+  
+  .contentToolTipBlock {
+    position: absolute; /* Относительное позиционирование */
+    left: -47px;
+    right: 0;
+    margin: auto;
+    width: auto;
+    text-transform: inherit;
+    transition: 1s; /* Время появления подсказки */
+    pointer-events: none; /* Подсказка */
+    padding: 0.5em; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    top: 0; /* Положение подсказки */
+    transition: visibility 0s, opacity 0.5s linear;
+    //   height: 120%;
+    width: 380px;
+    margin-top: 50px;
+    padding: 0px;
+    text-align: center;
+    padding: 12px 17px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    background: #000000bb; /* Синий цвет фона */
+    backdrop-filter: blur(10px);
+    border-radius: 6px;
+  }
+  .contentToolTipBlock img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .contentToolTipBlock span {
+    position: relative;
+  }
+  .datatool {
+    position: absolute;
+    top: 15px;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "GraphikLCG-Regular";
+    font-style: normal;
+    height: auto;
+    width: auto;
+    margin: auto;
+    width: 320px;
+    left: 0;
+    right: 0;
+    height: 80%;
+    z-index: 101;
+    line-height: 20px;
+    //   text-align: right;
+  }
+  
+  .datatool svg {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+  .zIndexLXBackdrop {
+    z-index: 100;
+  }
+  .contentToolTipBlock .svgclosetooltip {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    pointer-events: all;
+    // width: 80%;
+  }
+  .topBlockToolTip {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .leftblocktooltip {
+    position: relative;
+    width: 90%;
+    text-align: left;
+  }
+  // .datatool:hover .contentToolTipBlock {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
+  
+  .contentToolTipBlock a {
+    text-transform: lowercase;
+    cursor: pointer;
+    color: rgb(235, 200, 8, 1);
+    pointer-events: all;
+  }
+  // .LTBXRed {
+  //   background-color: #000000da;
+  //   background: linear-gradient(to top, rgb(255, 12, 12), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  //   background-size: 100% 100%;
+  // }
+  // .LTBXShit {
+  //   background-color: #000000da;
+  //   background: linear-gradient(to top, rgb(0, 190, 233), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  //   background-size: 100% 100%;
+  // }
+  // .LTBXGOLD {
+  //   background-color: #000000da;
+  //   background: linear-gradient(to top, rgb(255, 217, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  //   background-size: 100% 100%;
+  // }
+  
+  // .LTBXSilver {
+  //   background-color: #000000da;
+  //   background: linear-gradient(to top, rgba(196, 196, 196, 0.8), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  //   background-size: 100% 100%;
+  // }
+  
+  @media screen and (max-width: 910px) {
+    .contentToolTipBlock {
+      width: 280px;
+      left: 3px;
+    }
+    .datatool {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 590px) {
+    .datatool {
+      font-size: 10px;
+      line-height: 15px;
+    }
+    .datatool svg {
+      right: 15px;
+    }
+  }
+  

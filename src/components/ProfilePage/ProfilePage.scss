@@ -1,0 +1,800 @@
+.Profile {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "GraphikLCG-Regular";
+  font-weight: 300;
+}
+.ProfileBlock {
+  position: relative;
+  width: 91%;
+  height: 70%;
+  top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+.ProfileBlockBorder {
+  position: relative;
+  width: 91%;
+  height: 86%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  border: 1px solid #ffbf0086;
+}
+.ProfileBlockBorder_left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+  flex-direction: column;
+}
+.ProfileBlockBorder_right {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: scroll;
+}
+.NavBarProfile {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  // width: 100%;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.MainContentProfile {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+.NavBarProfile .nvb {
+  position: relative;
+  padding: 17px 45px;
+  background-color: rgb(38, 38, 38, 0.7);
+  color: #ffffff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-left: 1px solid #ffbf0086;
+  border-right: 1px solid #ffbf0086;
+  border-bottom: 1px solid #ffbf0086;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.25s ease-out;
+}
+.NavBarProfile .nvb:hover {
+  background-color: rgba(38, 38, 38, 0.575);
+  color: #a7a7a7;
+  border-left: 1px solid #ffbf00b7;
+  border-right: 1px solid #ffbf00b7;
+  border-bottom: 1px solid #ffbf00b7;
+}
+.ProfileBlockBorder_left_line {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #ffc000;
+  background: linear-gradient(to top, #ffbf0000, #ffbf0086, #ffbf0000);
+}
+.PnL_Statement_block_line {
+  position: relative;
+  right: auto;
+  height: 80%;
+}
+.ProfileMain {
+  position: relative;
+  margin-top: 7%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+}
+.ProfileMain_lumb_yellow {
+  position: relative;
+  height: auto;
+  background-color: #000000;
+  border-radius: 12px;
+}
+.ProfileMain_lumb_yellow img {
+  height: 147px;
+  width: 121px;
+  object-fit: cover;
+}
+
+.ProfileMain_dataUS_and_connect {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  margin-left: 10%;
+}
+.ProfileMain_dataUS_and_connect_nick {
+  position: relative;
+  text-align: left;
+  padding-left: 7px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.ProfileMain_dataUS_and_connect_nicksvg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.copySvgProfile {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+.copySvgProfile:hover {
+  opacity: 0.7;
+}
+.btnConnectTwitter_Profile {
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+  margin-top: auto;
+  color: #bea304;
+  padding: 12px 25px;
+  background-color: rgb(38, 38, 38, 0.7);
+  border-radius: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  font-size: 18px;
+}
+.btnConnectTwitter_Profile:hover {
+  background-color: rgb(38, 38, 38, 0.9);
+  color: #ebc808;
+}
+
+.AffilateBlock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 57px;
+  padding-left: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-transform: uppercase;
+  filter: blur(30px);
+  pointer-events: none;
+  opacity: 0;
+}
+.anonymousStayProfile {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.affiliateEnter_title {
+  margin-bottom: 11px;
+}
+.AffilateBlock span,
+.Affilatecode {
+  font-size: 18px;
+}
+.Affilatecode {
+  margin-bottom: 42px;
+  padding-left: 3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+  width: 73%;
+  text-align: left;
+}
+.infoAffilate {
+  font-size: 12px;
+  padding: 6px 11px;
+  background-color: rgb(0, 0, 0, 0.62);
+  border: 1px solid rgb(235, 200, 8, 0.5);
+  border-radius: 3px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  text-transform: lowercase;
+}
+.copyTextProfile {
+  font-size: 13px;
+}
+.infoAffilate:hover {
+  opacity: 1;
+}
+.anonymousStayProfile span {
+  font-size: 16px;
+  padding: 11px 30px;
+  background-color: rgb(38, 38, 38, 0.7);
+  border-radius: 10px;
+  color: #9f0000;
+  cursor: pointer;
+  transition: all 0.35s ease-out;
+  margin-right: 9px;
+}
+.anonymousStayProfile span:hover {
+  color: #c40000;
+}
+
+.AffilateStatus {
+  position: relative;
+  margin-top: 50px;
+  font-size: 14px;
+}
+.CopyrightStatus {
+  position: absolute;
+  font-size: 12px;
+  bottom: 20px;
+}
+
+.nvb1_Content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.nvb2_Content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.nvb3_Content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.nvb_Content {
+  justify-content: center;
+  align-items: center;
+}
+
+.nvb_Content .temporary_stub {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  z-index: 101;
+}
+
+.content_nvb1_Content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 12px);
+  padding-top: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.PnL_Statement_block {
+  position: relative;
+  width: 85%;
+  background-color: #262626;
+  height: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.PnL_title {
+  position: relative;
+  padding-left: 22px;
+}
+.statElement_PnL {
+  position: relative;
+  margin-left: 3%;
+  color: rgba(72, 193, 94, 0.7);
+  font-size: 24px;
+  margin-right: 3%;
+}
+.content_nvb2_Content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 12px;
+}
+.content_nvb3_Content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 12px;
+}
+
+.TotalStatBlock {
+  position: relative;
+  width: 85%;
+  height: auto;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.TotalOpen {
+  position: relative;
+  width: 45%;
+  height: auto;
+  background-color: #262626;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.TotalOpenTitle {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.numberOpenTotal {
+  position: relative;
+  font-size: 36px;
+  margin-right: 12px;
+}
+.lastMonthTotal {
+  position: relative;
+  font-size: 12px;
+  margin-left: 12px;
+}
+.percentTotal {
+  position: relative;
+  font-size: 24px;
+  color: rgb(72, 193, 94, 0.7);
+  margin-left: 15px;
+}
+.TotalOpenContent {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+}
+.Total_Statement_block_line {
+  position: relative;
+  height: 32px;
+}
+
+.registerData {
+  position: absolute;
+  bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+}
+
+.diagramStat {
+  position: relative;
+  width: calc(85% - 30px);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: auto;
+  background-color: #262626;
+  border-radius: 13px;
+  padding: 10px 10px 10px 20px;
+  margin-top: 12px;
+}
+.diagramStat canvas {
+  max-height: 131px;
+  padding-left: 12px;
+}
+.diagramStatTitle {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 12px;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #ffffff;
+  flex-direction: column;
+}
+.diagramStatTitle span:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.LearnMoreBlock {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.LearnMoreBlock svg {
+  margin-left: 8px;
+  transition: all 0.5s ease-out;
+  transform-origin: center 10px;
+}
+.LearnMoreBlock2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.LearnMoreBlock2 svg {
+  margin-left: 8px;
+  transition: all 0.5s ease-out;
+  transform-origin: center 10px;
+}
+.LearnMoreVisibility2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  padding-left: 15px;
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+}
+.LearnMoreVisibility {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  padding-left: 15px;
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+}
+
+.BlockInfo2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+.BlockInfo {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+.BlockInfo:nth-child(1) {
+  margin-top: 10px;
+}
+.BlockInfo2:nth-child(1) {
+  margin-top: 10px;
+}
+.lootboxName_blockinfo {
+  position: relative;
+  width: 10%;
+  text-align: left;
+}
+.lootboxName_blockinfo {
+  position: relative;
+  width: 70%;
+  text-align: left;
+}
+
+@media screen and (max-width: 1720px) {
+  .percentTotal {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .registerData {
+    bottom: -30px;
+  }
+  .AffilateBlock {
+    display: none;
+  }
+  .ProfileMain {
+    margin-top: 3%;
+  }
+  .ProfileBlock {
+    height: auto;
+    margin-top: 0%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .ProfileBlockBorder {
+    flex-direction: column;
+  }
+  .ProfileBlockBorder_left_line_leftdisplay {
+    display: none;
+  }
+  .ProfileBlockBorder_left {
+    width: 75%;
+  }
+  .ProfileBlockBorder_right {
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .ProfileBlock {
+    margin-bottom: 20px;
+  }
+  .NavBarProfile {
+    border-top: 1px solid rgb(235, 200, 8, 0.5);
+  }
+}
+
+@media screen and (max-width: 1134px) {
+  .ProfileBlockBorder_left {
+    width: 80%;
+  }
+  .ProfileBlockBorder_right {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .ProfileBlockBorder_left {
+    width: 85%;
+  }
+  .ProfileBlockBorder_right {
+    width: 100%;
+  }
+  .PnL_Statement_block {
+    width: 95%;
+  }
+  .TotalStatBlock {
+    width: 95%;
+  }
+  .diagramStat {
+    width: 90%;
+  }
+  .NavBarProfile {
+    width: 95%;
+  }
+  .ProfileMain_lumb_yellow img {
+    height: 117px;
+    width: 91px;
+  }
+  .ProfileMain {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .diagramStatTitle {
+    padding-left: 0px;
+  }
+  .diagramStat canvas {
+    padding-left: 0px;
+  }
+  .LearnMoreBlock {
+    font-size: 10px;
+  }
+  .LearnMoreBlock svg {
+    width: 15px;
+    height: 14px;
+  }
+  .LearnMoreBlock2 {
+    font-size: 10px;
+  }
+  .LearnMoreBlock2 svg {
+    width: 15px;
+    height: 14px;
+  }
+  .diagramStat {
+    width: 87%;
+  }
+  .ProfileBlockBorder_left {
+    width: 85%;
+  }
+  .ProfileBlockBorder_right {
+    width: 100%;
+  }
+  .NavBarProfile .nvb {
+    padding: 9px 15px;
+    font-size: 10px;
+  }
+  .PnL_Statement_block {
+    font-size: 10px;
+    height: 36px;
+  }
+  .registerData {
+    font-size: 14px;
+  }
+  .ProfileBlockBorder_right {
+    margin-bottom: 40px;
+  }
+  .statElement_PnL {
+    font-size: 12px;
+    margin-left: 4px;
+    margin-right: 5px;
+  }
+  .PnL_title {
+    padding-left: 5px;
+  }
+  .TotalOpenTitle {
+    padding-left: 6px;
+    font-size: 12px;
+  }
+  .TotalOpenContent {
+    padding-left: 6px;
+  }
+  .numberOpenTotal {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .lastMonthTotal {
+    margin-left: 4px;
+    font-size: 8px;
+  }
+  .TotalOpen {
+    width: 48%;
+  }
+  .percentTotal {
+    margin-left: 4px;
+    font-size: 12px;
+  }
+  .AffilateBlock {
+    padding-left: 15px;
+  }
+  .ProfileMain_dataUS_and_connect {
+    margin-left: 3%;
+  }
+  .ProfileMain_dataUS_and_connect_nick {
+    font-size: 20px;
+  }
+  .copyTextProfile {
+    font-size: 10px;
+  }
+  .btnConnectTwitter_Profile {
+    font-size: 14px;
+  }
+  .AffilateBlock span,
+  .Affilatecode {
+    font-size: 12px;
+  }
+  .CopyrightStatus {
+    text-align: left;
+    font-size: 10px;
+  }
+  .AffilateStatus {
+    font-size: 10px;
+  }
+  .BlockInfo2 {
+    font-size: 11px;
+    padding-left: 0px;
+  }
+  .BlockInfo {
+    font-size: 11px;
+    padding-left: 0px;
+  }
+  .LearnMoreVisibility2 {
+    padding-left: 5px;
+  }
+  .LearnMoreVisibility {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .ProfileBlockBorder_left {
+    width: 100%;
+  }
+  .ProfileBlockBorder_right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .ProfileBlockBorder_left {
+    width: 100%;
+  }
+  .ProfileBlockBorder_right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 1134px) {
+  .Profile {
+    height: 100vh;
+  }
+}
+@media screen and (max-height: 1034px) {
+  .Profile {
+    height: 100vh;
+  }
+}
+@media screen and (max-height: 1034px) and (max-width: 1365px) {
+  .Profile {
+    height: 110vh;
+  }
+}
+@media screen and (max-height: 910px) {
+  .Profile {
+    height: 135vh;
+  }
+}
+@media screen and (max-height: 790px) {
+  .Profile {
+    height: 140vh;
+  }
+}
+@media screen and (max-height: 690px) {
+  .Profile {
+    height: 145vh;
+  }
+}
+@media screen and (max-height: 590px) {
+  .Profile {
+    height: 140vh;
+  }
+}
+@media screen and (max-height: 490px) {
+  .Profile {
+    height: 135vh;
+  }
+}

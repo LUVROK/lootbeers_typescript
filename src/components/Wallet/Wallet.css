@@ -1,0 +1,1083 @@
+.App2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  /* min-height: 100vh; */
+  overflow: hidden;
+  overscroll-behavior: none;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+}
+
+.balance-info {
+}
+
+.StatBlock {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  line-height: 2em;
+
+  font-family: "GraphikLCG-Regular";
+  font-weight: normal;
+  text-decoration: none;
+
+  /* display: none; */
+}
+.lastOnlyMobileStatBlock {
+  /* display: none !important; */
+}
+.firstOnlyMobileStatBlock {
+  display: none !important;
+}
+.textSelect {
+  position: relative;
+  padding-left: 35px;
+  margin-top: 2.5px;
+}
+.textSelect::selection {
+  color: #ffc000;
+  /* background-color: #0000009c; */
+  text-shadow: 1px 1px 0 #ffbf0091;
+  /* color: #fff; */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.textSelectOpen:hover {
+  color: #ffc000 !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.MyLootsActive {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+.MyLootsActive:first-child::after {
+  width: 60%;
+  left: 20%;
+}
+.MyLootsActive:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 85%;
+  left: 7.5%;
+  /* border-bottom: solid 1px #ffffff6e;   */
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.MyLootsActive:hover:after {
+  transform: scaleX(1);
+}
+
+.MyLootsActive:hover {
+}
+.StatBlock_content {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.StatBlock_content_first {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border-right: 1px solid #586c91; */
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 10px;
+}
+.StatBlock_content_first_scroller {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.scrollbar-track {
+  display: none !important;
+}
+.scrollbar-track-y {
+  top: 0 !important;
+  right: 0 !important;
+  width: 6px !important;
+  height: 100% !important;
+  background-color: rgb(255, 255, 255, 0) !important;
+}
+.scrollbar-thumb {
+  background-color: rgba(105, 165, 245, 0.8) !important;
+  border-radius: 0px !important;
+  /* border: 2px solid rgba(0, 0, 0, 0) !important; */
+  background-clip: padding-box !important;
+}
+.LootboxComponent_price img {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  mix-blend-mode: difference;
+}
+.LootboxComponent_price img:nth-child(2) {
+  left: auto;
+  right: 0;
+  transform: scale(-1, 1);
+}
+.StatBlock_content_second {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border-left: 1px solid #586c91; */
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 10px;
+}
+.StatBlock_content_first_title {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-family: "GraphikLCG-Regular";
+  font-weight: normal;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.Loots_element {
+  position: relative;
+  width: 85%;
+  height: auto;
+  min-height: 62px;
+  /* background-color: #8fa4c383;
+    background: rgb(83,77,185);
+    background: linear-gradient(90deg, #8fa4c383 0%, #8fa4c3bd 100%);
+    border: 3px solid #586c91; */
+  margin-top: 15px;
+  /* border-radius: 12px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20px;
+  font-family: "GraphikLCG-Regular";
+  font-weight: normal;
+  font-size: 13px;
+  /* padding-top: 10px;
+    padding-bottom: 10px; */
+  /* overflow-y: scroll; */
+  /* cursor: pointer; */
+  transition: all 1s;
+}
+.Loots_element .ticketNumberStyle {
+  position: absolute;
+  bottom: 2.5px;
+  left: 30px;
+  font-size: 10px;
+  line-height: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: all 0.5s ease-in-out; */
+  /* opacity: 0; */
+  cursor: pointer;
+}
+.ticketNumberStyle_ticket {
+  position: relative;
+  top: 2.5px;
+}
+.Loots_element .ticketNumberStyle:hover {
+  opacity: 0.5;
+}
+.ticketNumberStyle_ticket::selection {
+  color: #ffc000;
+  /* background-color: #0000009c; */
+  text-shadow: 1px 1px 0 #ffbf0091;
+  /* color: #fff; */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.textSelect2::selection {
+  color: #ffc000;
+  /* background-color: #0000009c; */
+  text-shadow: 1px 1px 0 #ffbf0091;
+  /* color: #fff; */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.textSelect2 span::selection {
+  color: #ffc000;
+  /* background-color: #0000009c; */
+  text-shadow: 1px 1px 0 #ffbf0091;
+  /* color: #fff; */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.timeOpenLootbox::selection {
+  color: #ffc000;
+  /* background-color: #0000009c; */
+  text-shadow: 1px 1px 0 #ffbf0091;
+  /* color: #fff; */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.textSelect span::selection {
+  color: #ffc000;
+  /* background-color: #0000009c; */
+  text-shadow: 1px 1px 0 #ffbf0091;
+  /* color: #fff; */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.Loots_element_blockFlexRow {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  /* padding-top: 15%; */
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.timeOpenLootbox {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 12px;
+}
+.copySvg {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Loots_element:last-child {
+  margin-bottom: 8px;
+}
+.Loots_element:hover .Loots_element_gradientBackground {
+  /* background-color: #00000021 !important; */
+}
+/* .Loots_element:active .Loots_element_gradientBackground{
+    background-color: #00000021 !important;
+  } */
+.Loots_element:hover .copySvg {
+  /* opacity: 0.5; */
+}
+.Loots_element:hover {
+  /* min-height: 67px; */
+}
+.Loots_element:hover .ticketNumberStyle {
+  /* opacity: 1; */
+}
+.Loots_element_gradientBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000000;
+  transition: all 0.4s;
+  /* background: rgb(83,77,185);
+    background: linear-gradient(90deg, #8fa4c383 0%, #8fa4c3bd 100%); */
+  border-radius: 12px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  z-index: -1;
+}
+.Your_Loots_element:hover .Loots_element_gradientBackground {
+  background-color: #00000034;
+}
+.Latest_Loots_element:hover .Loots_element_gradientBackground {
+  background-color: #00000034;
+}
+.StatBlock_content_blockFirst {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 888px;
+}
+.StatBlock_content_blockSecond {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 888px;
+}
+.StatBlock_content_text_titles {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.Your_Loots_element_stat {
+  position: relative;
+  margin-top: 2.5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.Your_Loots_element .Your_Loots_element_stat div:nth-child(2) {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Latest_Loots_element {
+}
+.Your_Loots_element {
+}
+
+.MainBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 10px; */
+  /* margin-top: 20px; */
+  /* padding-left: 20px; */
+  /* padding-right: 30px; */
+  position: fixed;
+  height: 68px;
+  right: 0;
+  top: 36px;
+  font-size: 36px;
+  z-index: 1000;
+  /* -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
+  /* margin-right: 10px; */
+  /* border-radius: 12px; */
+  /* background-color: #8fa4c34b; */
+  /* backdrop-filter: blur(40px); */
+
+  /* margin-right: 80px; */
+  /* margin-top: 10px; */
+  padding-left: 5px;
+  /* background-color: #0000006e; */
+  /* background-color: #a52a2a6e; */
+
+  /* padding-right: 50px; */
+}
+.MainBlockProfile {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(40px);
+  background-color: #0000007e;
+  /* margin-right: 20px; */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.MainBlock .ImageMan {
+  position: relative;
+  width: auto;
+  height: 100%;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.4s;
+}
+.MainBlock .ImageMan:hover {
+  opacity: 0.8;
+}
+.MainBlock .ImageMan img {
+  position: relative;
+  height: 100%;
+}
+.MainBlock .wl_btn {
+  padding: 0px 10px;
+  margin: 0px;
+}
+.wallet-adapter-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "GraphikLCG-Regular";
+  /* letter-spacing: 0.05em; */
+  font-size: 14px;
+  font-weight: normal;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 24px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+.balanceStyle .nickname {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-decoration: none;
+  color: #ffffff;
+}
+.balanceStyle .nickname:hover {
+  opacity: 0.8;
+}
+
+.wl_btn {
+  /* border: 2px solid rgba(255, 255, 255, 0.49) !important; */
+  border-radius: 4px !important;
+  padding: 0px 20px !important;
+}
+
+.wl_btn:hover {
+  /* background: rgba(119, 116, 116, 0.452) !important; */
+  transition: 0.2s !important;
+}
+.wallet-adapter-button[disabled] {
+  background: none !important;
+  color: #363636 !important;
+}
+.wallet-adapter-button:hover {
+  background: none !important;
+  color: #363636;
+}
+.wallet-adapter-button-trigger {
+  background: none !important;
+}
+.wallet-adapter-button {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.disconBtn {
+  background: none;
+  padding: 10px 20px !important;
+  transition: 0.2s !important;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #b9b6be;
+}
+
+.wallet-adapter-button:not([disabled]):focus-visible {
+  outline-color: white;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+  background-color: #1a1f2e;
+}
+
+.wallet-adapter-button[disabled] {
+  background: #404144;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.wallet-adapter-button-end-icon,
+.wallet-adapter-button-start-icon,
+.wallet-adapter-button-end-icon img,
+.wallet-adapter-button-start-icon img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.wallet-adapter-button-end-icon {
+  margin-left: 12px;
+}
+
+.wallet-adapter-button-start-icon {
+  margin-right: 12px;
+}
+
+.wallet-adapter-collapse {
+  width: 100%;
+}
+
+.wallet-adapter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.wallet-adapter-dropdown-list {
+  position: absolute;
+  z-index: 99;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 10px;
+  padding: 10px;
+  top: 40px;
+  right: 0;
+  margin: 0;
+  list-style: none;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease, transform 200ms ease, visibility 200ms;
+  font-family: "GraphikLCG-Regular";
+}
+
+.wallet-adapter-dropdown-list-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(5px);
+}
+
+.wallet-adapter-dropdown-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  height: 37px;
+  color: #fff;
+  font-family: "GraphikLCG-Regular";
+}
+.wallet-adapter-dropdown-list-item:nth-child(1) {
+  /* display: none; */
+}
+
+.wallet-adapter-dropdown-list-item:not([disabled]):hover {
+  background-color: #64646494;
+}
+
+.wallet-adapter-modal-collapse-button svg {
+  align-self: center;
+  fill: #999;
+}
+
+.wallet-adapter-modal-collapse-button.wallet-adapter-modal-collapse-button-active svg {
+  transform: rotate(180deg);
+  transition: transform ease-in 150ms;
+}
+
+.wallet-adapter-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity linear 150ms;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  overflow-y: auto;
+}
+
+.wallet-adapter-modal.wallet-adapter-modal-fade-in {
+  opacity: 1;
+}
+
+.wallet-adapter-modal-button-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 12px;
+  cursor: pointer;
+  background: #1a1f2e;
+  border: none;
+  border-radius: 50%;
+}
+
+.wallet-adapter-modal-button-close:focus-visible {
+  outline-color: white;
+}
+
+.wallet-adapter-modal-button-close svg {
+  fill: #777;
+  transition: fill 200ms ease 0s;
+}
+
+.wallet-adapter-modal-button-close:hover svg {
+  fill: #fff;
+}
+
+.wallet-adapter-modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.wallet-adapter-modal-container {
+  display: flex;
+  margin: 3rem;
+  min-height: calc(100vh - 6rem); /* 100vh - 2 * margin */
+  align-items: center;
+  justify-content: center;
+}
+.balanceStyle {
+  padding: 0px 20px 0px 10px;
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.wallet-adapter-modal-wrapper .wallet-adapter-button {
+  width: 100%;
+  padding: 0px 20px !important;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.wallet-adapter-modal-wrapper {
+  backdrop-filter: blur(20px) !important;
+  background: rgba(0, 0, 0, 0.548) !important;
+}
+.wallet-adapter-modal-button-close {
+  background-color: #ffffff;
+}
+
+.socialLinks {
+  position: relative;
+  /* z-index: 9999; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  /* right: 323px; */
+  /* top: 36px; */
+  margin-top: 10px;
+  border-radius: 12px;
+  padding: 0px 15px;
+  height: 48px;
+  /* background-color: #082d3a6b; */
+  /* backdrop-filter: blur(10px); */
+}
+.header_a {
+  /* margin-left: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_a svg {
+  width: 40px;
+  height: 40px;
+}
+
+.Loot_color_darkThemeLink_2 {
+  position: relative;
+  height: 100%;
+  width: 100px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+@media screen and (max-width: 1410px) {
+  .StatBlock_content_first_title {
+    font-size: 24px;
+  }
+  .Loots_element {
+    font-size: 10px;
+  }
+  .timeOpenLootbox {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .Loots_element {
+    padding-left: 10px;
+    width: 90%;
+  }
+  .copySvg {
+    /* left: 5px; */
+  }
+}
+
+@media screen and (max-width: 1134px) {
+  .StatBlock_content_first_title {
+    font-size: 20px;
+  }
+  .Loots_element {
+    font-size: 11px;
+  }
+  .StatBlock_content {
+    flex-direction: column;
+  }
+  .StatBlock_content_blockFirst {
+    display: none;
+    font-size: 14px;
+    border: 0px !important;
+  }
+  .StatBlock_content_blockSecond {
+    border: 0px !important;
+  }
+  .StatBlock_content_blockSecond {
+    margin-top: 4vh;
+    margin-bottom: 20px;
+  }
+  .StatBlock_content_first_title {
+    border: none !important;
+    padding-bottom: 0px;
+  }
+  .Loots_element_gradientBackground {
+    border-width: 1px !important;
+  }
+  .StatBlock_content_text_titles {
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .MyLootsActive:first-child::after {
+    width: 80%;
+    left: 10%;
+  }
+  /* .firstOnlyMobileStatBlock {
+        display: none !important;
+    } */
+  .firstOnlyMobileStatBlock {
+    display: block !important;
+  }
+  .lastOnlyMobileStatBlock {
+    display: block !important;
+  }
+  .StatBlock {
+    height: auto;
+    margin-top: 2vh;
+  }
+  .Loots_element {
+    /* min-height: 42px; */
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .socialLinks {
+    padding-top: 0px;
+    height: 68px;
+    /* padding-right: 210px; */
+    right: 0px;
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+  .MainBlock {
+    margin-right: 10px;
+    /* margin-top: 10px; */
+    padding-left: 10px;
+    /* padding-right: 50px; */
+    /* visibility: hidden; */
+  }
+  .blockMenuZIndex {
+    /* right: 10px; */
+  }
+  .MainBlock .balanceStyle {
+    /* visibility: hidden;
+        display: none; */
+  }
+  .balanceStyle {
+    font-size: 12px !important;
+    padding: 0px 0px;
+  }
+  .MainBlock .wallet-adapter-dropdown .wallet-adapter-button {
+    font-size: 12px;
+  }
+  .wallet-adapter-modal-wrapper .wallet-adapter-button {
+    padding: 0px 10px !important;
+  }
+  .wl_btn {
+    padding: 0px 10px !important;
+  }
+  .header_a svg {
+    width: 36px;
+    height: 36px;
+  }
+  .StatBlock_content_first_title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .Loots_element {
+    font-size: 9.5px;
+  }
+  .timeOpenLootbox {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .socialLinks {
+    height: 68px;
+  }
+  .menuToggleBlock {
+    height: 68px;
+  }
+  .MainBlock .wallet-adapter-dropdown .wallet-adapter-button {
+    margin-top: 2px;
+    margin-bottom: -2px;
+  }
+  .MainBlock {
+    height: 48px;
+    /* margin-bottom: 40px; */
+    background-color: transparent;
+    /* backdrop-filter: blur(0px); */
+  }
+  .header_a svg {
+    width: 32px;
+    height: 32px;
+  }
+  .StatBlock_content_first_title {
+    font-size: 16px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .StatBlock {
+    /* margin-top: 2vh; */
+  }
+}
+@media screen and (max-width: 410px) {
+  .socialLinks {
+    height: 48px;
+    /* padding-right: 185px; */
+  }
+  .menuToggleBlock {
+    height: 48px;
+  }
+  .MainBlock .wallet-adapter-dropdown .wallet-adapter-button {
+    margin-top: 0px;
+    margin-bottom: -4px;
+    height: 42px;
+  }
+  .MainBlock {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .blockMenuZIndex {
+    /* right: 5px; */
+  }
+  .header_a svg {
+    width: 28px;
+    height: 28px;
+  }
+  .Loots_element {
+    font-size: 8.5px;
+  }
+  .timeOpenLootbox {
+    font-size: 9px;
+  }
+  .StatBlock {
+    margin-top: -2vh;
+  }
+  .StatBlock_content_second {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .wallet-adapter-modal-container {
+    margin: 1rem;
+    min-height: calc(100vh - 2rem); /* 100vh - 2 * margin */
+  }
+  .socialLinks {
+    /* top: 28px;
+        padding-right: 15px;
+        backdrop-filter: none; */
+  }
+  /* .AppBacdrop_title {
+        height: 88px !important;
+    } */
+  .StatBlock_content_first_title {
+    /* font-size: 24px; */
+  }
+}
+
+.wallet-adapter-modal-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1050;
+  max-width: 400px;
+  border-radius: 10px;
+  background: #10141f;
+  background: #283347;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  font-family: "GraphikLCG-Regular";
+  flex: 1;
+}
+.wallet-adapter-button:hover {
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.wallet-adapter-modal-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+  padding: 64px 48px 48px 48px;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 374px) {
+  .wallet-adapter-modal-title {
+    font-size: 18px;
+  }
+}
+
+.wallet-adapter-modal-list {
+  margin: 0 0 12px 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+.wallet-adapter-modal-list li {
+  width: 100%;
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button {
+  font-weight: normal;
+  border-radius: 0;
+  font-size: 18px;
+}
+
+.wallet-adapter-button-end-icon,
+.wallet-adapter-button-start-icon,
+.wallet-adapter-button-end-icon img,
+.wallet-adapter-button-start-icon img {
+  display: flex !important;
+}
+.wl_btn .wallet-adapter-button-start-icon img {
+  display: none !important;
+}
+.wl_btn .wallet-adapter-button-start-icon {
+  display: none !important;
+  width: 0px !important;
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button-end-icon,
+.wallet-adapter-modal-list .wallet-adapter-button-start-icon,
+.wallet-adapter-modal-list .wallet-adapter-button-end-icon img,
+.wallet-adapter-modal-list .wallet-adapter-button-start-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button span {
+  margin-left: auto;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.wallet-adapter-modal-list-more {
+  cursor: pointer;
+  border: none;
+  padding: 12px 24px 24px 12px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+}
+
+.wallet-adapter-modal-list-more svg {
+  transition: all 0.1s ease;
+  fill: rgba(255, 255, 255, 1);
+  margin-left: 0.5rem;
+}
+
+.wallet-adapter-modal-list-more-icon-rotate {
+  transform: rotate(180deg);
+}
+
+.wallet-adapter-modal-middle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px 24px 24px;
+  box-sizing: border-box;
+}
+
+.wallet-adapter-modal-middle-button {
+  display: block;
+  cursor: pointer;
+  margin-top: 48px;
+  width: 100%;
+  background-color: #512da8;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}

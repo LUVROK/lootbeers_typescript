@@ -1,0 +1,23 @@
+
+discord client id 1037058123346755715 ---- 7oE7fbDGCeyhI7ir14Il8CNdfiX81LXc
+
+include_entities=true
+oauth_consumer_key=VPCCfZOeSifDg0eSYBE6Cv9c8				?
+oauth_nonce= (https://1password.com/password-generator/)		?
+oauth_signature_method=HMAC-SHA1
+oauth_timestamp=1318622958 (https://www.unixtimestamp.com/)
+oauth_token=1384168604258627586-RCoPnUL7M0PU7d4tZ15h5l5X2w6s27 	?
+oauth_version=1.0
+
+https://api.twitter.com/1.1/statuses/update.json?include_entities=true&oauth_consumer_key=VPCCfZOeSifDg0eSYBE6Cv9c8&oauth_nonce=cYe4RXfugVcoWEEU9TffnBRGBDdwhLyeDNDdxg2pai&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1667424890&oauth_token=1384168604258627586-RCoPnUL7M0PU7d4tZ15h5l5X2w6s27&oauth_version=1.0&status=Hello%20Ladies%20%2B%20Gentlemen%2C%20a%20signed%20OAuth%20request%21
+
+
+API Key 			- GgrTD4LN0SDYZfDvMVFzhZkjm
+API Key Secret 		- 7cqVj8HG38rxsCAYuFuGlS8VoZJSx52qhSs8teAcqK4zEqwK4o
+Access Token 		- 1384168604258627586-37Yhl1hEO2CQ9rbN40eiheIsInJIqs
+Access Token Secret 	- fiwSQhRctjGkoplv26axu32u7wCwhqnjBgsCfK0xF1VmH
+Bearer Token 		- AAAAAAAAAAAAAAAAAAAAAHiOiwEAAAAAhjNNw0Jf2%2BeVySpG08WnPQQxAcg%3DjiIpr3U7U6ujXdg7I7xhb1lbEKvVwPqZalpYAbaaAn37yc7r9l
+Client ID			- aGhvYm0walZMblZWWmQyQkI2Z2Q6MTpjaQ
+Client Secret		- gAHarFfNjqDTY-y3rikdeIfpuipdWDtkdO63ELw8xKjpW9zCiT
+
+

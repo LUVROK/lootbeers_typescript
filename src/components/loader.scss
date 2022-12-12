@@ -1,0 +1,83 @@
+[class*="loaderOpen"] {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	color: inherit;
+	vertical-align: middle;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+[class*="loaderOpen2"] {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	color: inherit;
+	vertical-align: middle;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+.loaderOpen {
+	border: .2em solid transparent;
+	border-radius: 50%;
+	animation: 1s loaderOpen linear infinite;
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		width: inherit;
+		height: inherit;
+		position: absolute;
+		top: -.2em;
+		;
+		left: -.2em;
+		;
+		border: .2em solid #FFFFFF;
+		border-radius: 50%;
+		opacity: .5;
+	}
+}
+
+
+.loaderOpen2 {
+	border: .2em solid transparent;
+	border-radius: 50%;
+	animation: 1s loaderOpen linear infinite;
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		width: inherit;
+		height: inherit;
+		position: absolute;
+		top: -.2em;
+		;
+		left: -.2em;
+		;
+		border: .2em solid #FFFFFF;
+		border-radius: 50%;
+		opacity: .5;
+	}
+}
+
+@keyframes loaderOpen {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
